@@ -5,6 +5,7 @@ num2 = int(num2)
 sum = num1 + num2
 print (f"The sum of {num1} and {num2} is {sum}")
 
+
 num3 = input("What is number 3:")
 num4 = input("What is number 4:")
 num3 = int(num3)

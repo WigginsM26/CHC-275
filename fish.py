@@ -1,9 +1,9 @@
 fish = input("What type of fish do you want? ")
 if fish == "carnivorous":
-    fish == input("Do you have the fish already? ")
-    if fish == "yes":
+    ask = input("Do you have the fish already? ")
+    if ask == "yes":
         print ("TOO BAD")
-    if fish == "no":
+    if ask == "no":
         print ("enjoy")
       
 elif fish == "salt water":
@@ -11,3 +11,4 @@ elif fish == "salt water":
 elif fish == "community":
     print ("you should get more than one")
 else: fish == ("I don't think that's a type of fish")
+
