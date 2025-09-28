@@ -6,12 +6,19 @@ if x > 5 and x > 15:
     print (f"{x} is greater then 5 or 15")
     
     
-year = input("Enter your year: ")
-if year == "freshman":
+oper = input(" Enter the operaation you want to use: ")
+if oper == "addition":
     print ("your grade level is 9")
-elif year == "sophmore":
+elif oper == "subtraction":
     print("your grade level is 10")
-elif year == "junior":
+elif oper == "multiplicaton":
     print ("your grade level is 11") 
-elif year == ("Senoir"):
+elif oper == ("division"):
     print ("your grade level is 12")
+    
+print("welcome to the calculator")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
