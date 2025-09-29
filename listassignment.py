@@ -1,25 +1,11 @@
-"""
-mean.py
-
-to the calculate the mean of the list,
-    1) add up all the values
-    2) divide by how many things there are
-   
-what list function tells us how many things there are? len(<name of list>)
-
-1) create a variable called sum = 0
-2) do a for-loop over a list of numbers
-
-
-nums = [46,92,10,98,57,12,77,99,31,19,62,41,81,40,56,97,74,13,85,16,69,32,36,27,2,24,25,71,20,4,45,84,37,86,91,75,55,67,60,1,21,100,44,70,9,94,29,26,90,82,11,66,17,47,38,42,3,43,95,6,89,87,51,28,63,23,65,22,5,61,64,58,39,30,50,72,14,59,48,76,18,53,49,96,15,34,7,78,93,83,68,79,80,33,88,35,8,73,54,52]
-
-3) calculate the mean
-4) print out the mean
-"""
 sum = 0
 myList = [46,92,10,98,57,12,77,99,31,19,62,41,81,40,56,97,74,13,85,16,69,32,36,27,2,24,25,71,20,4,45,84,37,86,91,75,55,67,60,1,21,100,44,70,9,94,29,26,90,82,11,66,17,47,38,42,3,43,95,6,89,87,51,28,63,23,65,22,5,61,64,58,39,30,50,72,14,59,48,76,18,53,49,96,15,34,7,78,93,83,68,79,80,33,88,35,8,73,54,52]
 
 for num in myList:
     sum = sum + num 
     
-print (sum)
+mean = sum / (len(myList))
+    
+print (mean)
+
+
