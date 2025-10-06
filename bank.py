@@ -1,3 +1,15 @@
+name = ["Maddox", "Paul", "Mr. Basmaci", ]
+accname = ["@wiggins" ,"@paul", "@basmaci"]
+balance = [10,000, 70 ,5000]
+print (f"Banking information for {name[0]}). {accname[0]}. {balance[0]}")
+for i in range (len(name)):
+    print (f"Banking information for {name[i]}. {accname[i]}. {balance[i]}")
+
+
+
+
+
+
 name = input("Welcome to the Bank! Enter your account name: ")
 if name == "@wiggins":
     password = input("What is you password?: ") 
@@ -52,8 +64,4 @@ while check == False:
     elif oper == "quit":
         check = True
         
-        me = input("Account?: ")
-    name = int(name)
-    password = int(password)
-    
-    print (f"You have deposited ${num} into the account: {name} ")
+     
