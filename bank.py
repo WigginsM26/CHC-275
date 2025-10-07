@@ -1,7 +1,6 @@
-name = ["Maddox", "Paul", "Mr. Basmaci", ]
-accname = ["@wiggins" ,"@paul", "@basmaci"]
-balance = [10,000, 70 ,5000]
-print (f"Banking information for {name[0]}). {accname[0]}. {balance[0]}")
+name = ["Maddox","Paul","Mr.Basmaci", ]
+accname = ["@wiggins","@paul","@basmaci"]
+balance = [10000,70,5000]
 for i in range (len(name)):
     print (f"Banking information for {name[i]}. {accname[i]}. {balance[i]}")
 
