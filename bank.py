@@ -1,9 +1,62 @@
-
-name = ["Maddox","Paul","Mr.Basmaci", ]
-accname = ["@wiggins","@paul","@basmaci"]
+acc = ["@wiggins","@paul","@basmaci"]
 balance = [10000,70,5000]
-for i in range (len(name)):
-    print (f"Banking information for {name[i]}. {accname[i]}. {balance[i]}")
+
+check = False
+while check == False:
+    for i in range (len(acc)):
+         print (f"Banking information for. {acc[i]}. Balance: {balance[i]}")
+    print("1. Deposit")
+    print("2. Withdrawl")
+    print("3. Add Account")
+    print("4. Delete Accout")
+    print("5. Transfer")
+
+option = input("What would you like to do today! Press quit to exit: ")
+
+if option == "1":
+        name = input("Which account is depositing? ")
+        index = acc.index(name)
+        deposit = input("State the amount being deposited: ")
+        deposit = int(deposit)
+        balance[index] = balance[index] + deposit
+
+"""elif option == "2":
+        name = input("Remove account: ")
+        index = bank1.append(name)
+        acc.pop(index)
+        acc.pop(index)
+
+    elif option == "3":
+        name = input("Which account is depositing? ")
+        index = bank1.index(name)
+        money = input("State the amount being deposited: ")
+        money = int(money)
+        bank2[index] = bank2[index] + money
+
+    elif option == "4":
+        name = input("Which account is withdrawing? ")
+        index = bank1.index(name)
+        money = input("State the amount being withdrawn: ")
+        money = int(money)
+        bank2[index] = bank2[index] - money
+
+    elif option == "5":
+        name = input("Which account is making the transfer?: ")
+        index = bank1.index(name)
+        name2 = input("To which account?: ")
+        index2 = bank1.index(name2)
+        transfer = input("State the amount being transferred: ")
+        transfer = int(transfer)
+        bank2[index] = bank2[index] - transfer
+        bank2[index2] = bank2[index2] + transfer
+
+    if option == "quit":
+        check = True
+
+
+
+
+
 
 
 
@@ -62,6 +115,6 @@ while check == False:
         multi = num5 * num6
         print (f"The product of {num5} and {num6} is {multi}")
     elif oper == "quit":
-        check = True
+        check = True"""
         
      
