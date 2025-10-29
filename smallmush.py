@@ -11,9 +11,9 @@ while True:
         print ("large mushroom:", largemush)
         
         
-    if size < 100:
-        smallmush.append(size)
-    elif size < 200:
-        medmush.append(size)
-    else:
-        largemush.append(size)
+        if size < 100:
+            smallmush.append(size)
+        elif size < 200:
+            medmush.append(size)
+        else:
+            largemush.append(size)
