@@ -15,7 +15,3 @@ def is_palindrome(word):
 
     return words == revesred
 
-wordinput = input ("Enter word")
-if is_palindrome(wordinput):
-    print(f"{wordinput} is a palindrome.")
-else (f"{wordinput}"):
