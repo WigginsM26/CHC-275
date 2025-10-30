@@ -1,19 +1,22 @@
-def is_palindrome(word):
+def ispalindrome(word):
     words = ""
     for char in word:
         if char != " ":
             words += char.lower()
 
-    reversed_word = ""
+    reversedword = ""
     i = len(words) - 1
     while i >= 0:
-        reversed_word += words[i]
+        reversedword += words[i]
         i -= 1
 
-    return words == reversed_word
+    return words == reversedword
 
 wordinput = input("Enter word: ")
-if is_palindrome(wordinput):
+if ispalindrome(wordinput):
     print(f"{wordinput} is a palindrome.")
 else:
     print(f"{wordinput} is not a palindrome.")
+
+    
+
