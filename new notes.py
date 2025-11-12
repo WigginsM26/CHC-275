@@ -1,5 +1,7 @@
-listofnames = ["Alice", "bob", "Charlie", "Darwin"]
-file = open("Names. txt","r")
+file = open("days.txt","r")
 buffer = file.readlines()
-print(buffer)
 file.close()
+print (buffer)
+print (buffer[0])
+
+msft = buffer[0]
