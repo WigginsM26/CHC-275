@@ -45,7 +45,7 @@ def generatereport(tickers1, prices1, prices2, filename):
         else:
             file.write(" Recommendation: Don't buy\n\n")
             
-    file.close
+    file.close()
     
     
 def main():
@@ -55,4 +55,3 @@ def main():
     generatereport(tickers1, prices1, prices2, "report.txt")
      
     main()
-        
