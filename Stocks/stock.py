@@ -49,8 +49,8 @@ def generatereport(tickers1, prices1, prices2, filename):
     
     
 def main():
-    tickers1, prices1 = readstockdata("day1_20.txt")
-    tickers2, prices2 = readstockdata("day21_40.txt")
+    tickers1, prices1 = readstockdata("Day1_20.txt")
+    tickers2, prices2 = readstockdata("Day21_40.txt")
     
     generatereport(tickers1, prices1, prices2, "report.txt")
      
