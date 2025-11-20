@@ -45,12 +45,12 @@ def generatereport(tickers1, prices1, prices2, filename):
         else:
             file.write(" Recommendation: Don't buy\n\n")
             
-    file.close
+    file.close()
     
     
 def main():
     tickers1, prices1 = readstockdata("day1_20.txt")
-    tickers2, prices2 = readstockdata("day1_40.txt")
+    tickers2, prices2 = readstockdata("day21_40.txt")
     
     generatereport(tickers1, prices1, prices2, "report.txt")
      
