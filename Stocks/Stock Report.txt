@@ -1,0 +1,12 @@
+MSFT:
+    Day 1-20 Average: 397.85
+    Day 21-40 Average: 395.60
+    Recommendation: Do Not Buy
+AMZN:
+    Day 1-20 Average: 399.45
+    Day 21-40 Average: 400.40
+    Recommendation: Buy
+NVDA:
+    Day 1-20 Average: 390.75
+    Day 21-40 Average: 396.20
+    Recommendation: Buy

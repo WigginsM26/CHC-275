@@ -1,7 +1,7 @@
 def readstockdata(filename):
     tickers = []
     prices = []
-    file = open(filename, "r")
+    file = open(filename,"r")
     
     for line in file:
         line = line.strip()
@@ -28,7 +28,7 @@ def average(numbers):
     return total / len(numbers)
 
 def generatereport(tickers1, prices1, prices2, filename):
-    file = open (filename, "w")
+    file = open (filename,"w")
     file.write("Stock Report\n\n")
 
     for i in range(len(tickers1)):
