@@ -37,7 +37,7 @@ def generatereport(tickers1, prices1, prices2, filename):
         avg2 = average(prices2[i])
         
         file.write(ticker + "\n")
-        file.write("day 1-20 average: " + str(round(avg, 2)) + "\n")
+        file.write("day 1-20 average: " + str(round(avg, 1)) + "\n")
         file.write("day 21-40 average: " + str(round(avg2, 2)) + "\n")
         
         if avg2 > avg:
