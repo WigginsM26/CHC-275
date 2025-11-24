@@ -1,7 +1,7 @@
 def readstockdata(filename):
     tickers = []
     prices = []
-    file = open(filename, "r")
+    file = open(filename,"r")
     
     for line in file:
         line = line.strip()
@@ -28,7 +28,7 @@ def average(numbers):
     return total / len(numbers)
 
 def generatereport(tickers1, prices1, prices2, filename):
-    file = open (filename, "w")
+    file = open (filename,"w")
     file.write("Stock Report\n\n")
 
     for i in range(len(tickers1)):
@@ -37,7 +37,7 @@ def generatereport(tickers1, prices1, prices2, filename):
         avg2 = average(prices2[i])
         
         file.write(ticker + "\n")
-        file.write("day 1-20 average: " + str(round(avg, 2)) + "\n")
+        file.write("day 1-20 average: " + str(round(avg, 1)) + "\n")
         file.write("day 21-40 average: " + str(round(avg2, 2)) + "\n")
         
         if avg2 > avg:
