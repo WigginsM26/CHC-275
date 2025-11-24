@@ -29,7 +29,7 @@ def average(numbers):
 
 def generatereport(tickers1, prices1, prices2, filename):
     file = open (filename,"w")
-    file.write("Stock Report\n\n")
+    file.write("stock report\n\n")
 
     for i in range(len(tickers1)):
         ticker = tickers1[i]
