@@ -6,7 +6,7 @@ cart = {}
 check = False
 while not check:
     for i in range(len(items)):
-        print(f"{items[i]} - ${prices[i]:.2f}")
+        print(f"{items[i]} - ${prices[i]:}")
     
     print("1. Add to cart")
     print("2. Remove from cart")
@@ -15,39 +15,40 @@ while not check:
     option = input("Choose an option (or type 'quit' to exit): ")
 
     if option == "1":
-        name = input("Enter item to add: ")
+        name = input("Enter item: ")
         if name in items:
-            qty = int(input("Quantity: "))
-            cart[name] = cart.get(name, 0) + qty
-            print(f"Added {qty} {name} to cart.")
+            amt = int(input("Amount: "))
+            cart[name] = cart.get(name, 0) + amt
+            print(f"Added {amt} {name} to cart.")
         else:
-            print("Item not found.")
+            print("Out of Stock.")
 
     elif option == "2":
         name = input("Enter item to remove: ")
         if name in cart:
-            qty = int(input("Quantity to remove: "))
-            if qty >= cart[name]:
+            amt = int(input("Quantity to remove: "))
+            if amt >= cart[name]:
                 del cart[name]
             else:
-                cart[name] -= qty
-            print(f"Removed {qty} {name} from cart.")
+                cart[name] -= amt
+            print(f"Removed {amt} {name} from cart.")
         else:
             print("Item not in cart.")
 
     elif option == "3":
         print("Your cart:")
-        for item, qty in cart.items():
-            print(f"{qty} x {item}")
+        for item, amt in cart.items():
+            print(f"{amt} x {item}")
 
     elif option == "4":
-        subtotal = sum(prices[items.index(item)] * qty for item, qty in cart.items())
+        subtotal = sum(prices[items.index(item)] * amt for item, amt in cart.items())
         tax = subtotal * 0.06
         total = subtotal + tax
-        print(f"Subtotal: ${subtotal:.2f}")
-        print(f"Tax: ${tax:.2f}")
-        print(f"Total: ${total:.2f}")
+        print(f"Subtotal: ${subtotal:}")
+        print(f"Tax: ${tax:}")
+        print(f"Total: ${total:}")
         check = True
 
     elif option == "quit":
         check = True
+        print("Thank you for visiting the Grocery Store!")
