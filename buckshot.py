@@ -131,7 +131,7 @@ def game_round(player1, player2):
 def main():
     print("=*=* BUCKSHOT ROULETTE *=*=\n")
     
-    player1 = Player("Player 1", health=3, proAI=False)
+    player1 = Player("Player 1", health=6, proAI=False)
     player2 = Player("AI Opponent", health=3, proAI=True)
     
     round_num = 1
